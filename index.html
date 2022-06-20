@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cash Books</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="cabeçalho">
+            <div class="container"> 
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="menu__cabeçalho container__imagem"></span>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Finanças</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Ações</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Negócios</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Psicologia</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Motivacional</a>
+                    </li>
+                </ul>
+                <img class="logo__cabeçalho container__imagem" src="img/Logo.svg" alt="Logo no cabeçalho">
+                <h1 class="container__titulo"><b class="container__titulo-negrito">Cash</b><b>Books</b></h1>
+            </div>
+
+            <ul class="opções">
+                <input type="checkbox" id="menu-opções" class="opções__botao">
+                <label for="menu-opções" class="opções__rotulo">
+                    <span class="opções__menu opções__item">Categoria</span>
+                </label>
+                <ul class="opções-menu">
+                    
+                    <li class="lista-opções__item">
+                        <a href="#" class="lista-opções__link">Finanças</a>
+                    </li>
+                    <li class="lista-opções__item">
+                        <a href="#" class="lista-opções__link">Ações</a>
+                    </li>
+                    <li class="lista-opções__item">
+                        <a href="#" class="lista-opções__link">Negócios</a>
+                    </li>
+                    <li class="lista-opções__item">
+                        <a href="#" class="lista-opções__link">Psicologia</a>
+                    </li>
+                    <li class="lista-opções__item">
+                        <a href="#" class="lista-opções__link">Motivacional</a>
+                    </li>
+                </ul>
+                <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+                <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+            </ul>
+
+            <div class="container">
+                <a href="#"> <img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__transparente"></a>
+                <a href="#" class="container__link"> 
+                    <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                    <p class="container__texto">Minha Sacola</p>
+                </a> 
+                <a href="#" class="container__link"> 
+                    <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                    <p class="container__texto">Meu Perfil</p>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="banner">
+                <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+                <p class="banner__texto">Encontre em nossa estante o que precisa para seu conhecimento!</p>
+                <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+            </section>    
+
+            <section class="carrosel">
+                <h2 class="carrosel__titulo">Promoções</h2>
+                <!-- Slider main container -->
+                <div class="carrosel__info">
+                    <div class="swiper">
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-7.svg" alt="Livro O Investidor Inteligente"></a></div>
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-8.svg" alt="Livro O Homem mais rico da Babilonia"></a></div>
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-9.svg" alt="Livro Mais esperto que o Diabo"></a></div>
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-10.svg" alt="Livro Pai rico, Pai pobre"></a></div>
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-11.svg" alt="Livro O Mais importante para o investidor"></a></div>
+                        <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-12.svg" alt="Livro Os segredos da mente milionária"></a></div>                  
+                        </div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                    <div class="card">
+                        <!-- Linha 1 -->
+                        <div class="card__descrição"> 
+                            <!-- Coluna 1 -->
+                            <div class="descrição">
+                                <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                                <h2 class="descrição__titulo-livro">Essencialismo</h2>
+                                <p class="descrição__texto">O essencialista não faz mais coisas em menos tempo – ele faz apenas as coisas certas.</p>
+                            </div>
+                            <!-- Coluna 2 -->
+                            <img src="img/Livro-recomendado.svg" class="descrição__imagem" alt="Livro Essencialismo">
+                        </div>
+                        <div class="card__botões">
+                            <ul class="botões">
+                                <li class="botões__item">
+                                    <a href="#"> <img src="img/Favoritos.svg" alt="Favoritar livro" class="botões__imagem"></a>
+                                </li>
+                                <li class="botões__item">
+                                    <a href="#"> <img src="img/Compras.svg" alt="Adicionar livro a lista de desejos" class="botões__imagem"></a> 
+                                </li>
+                            </ul>
+                            <a href="#" class="botões__saiba-mais">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div> 
+                <h2 class="carrosel__titulo">Mais Vendidos</h2>
+                
+                <div class="carrosel__info">
+                <div class="swiper">
+                    
+                    <div class="swiper-pagination"></div>                    
+                    <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-1.svg" alt="Livro O Investidor Inteligente"></a></div>
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-2.svg" alt="Livro O Homem mais rico da Babilonia"></a></div>
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-3.svg" alt="Livro Mais esperto que o Diabo"></a></div>
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-4.svg" alt="Livro Pai rico, Pai pobre"></a></div>
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-5.svg" alt="Livro O Mais importante para o investidor"></a></div>
+                    <div class="swiper-slide"><img class="corresel__livros" src="img/Livro-6.svg" alt="Livro Os segredos da mente milionária"></a></div>                  
+                    </div>
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                    <div class="card">
+                        <!-- Linha 1 -->
+                        <div class="card__descrição"> 
+                            <!-- Coluna 1 -->
+                            <div class="descrição">
+                                <h3 class="descrição__titulo">Autor Sugerido</h3>
+                                <h2 class="descrição__titulo-livro">Napoleon Hill</h2>
+                                <p class="descrição__texto">Escritor estadunidense influente na área de autoajuda.</p>
+                            </div>
+                            <!-- Coluna 2 -->
+                            <img src="img/Autor-NapoleonHill.svg" class="descrição__imagem-autor" alt="Foto do autor Napoleon Hill">
+                        </div>
+                        <div class="card__botões">
+                            <ul class="botões">
+                                <li class="botões__item">
+                                    <a href="#"> <img src="img/Favoritos.svg" alt="Favoritar livro" class="botões__imagem"></a>
+                                </li>
+                                
+                            </ul>
+                            <a href="#" class="botões__saiba-mais">Livros do Autor</a>
+                        </div>
+                    </div>    
+                </div>            
+            </section>
+            
+            <section class="tópicos">
+                <h2 class="tópicos__titulo">Tópicos visitados recentemente</h2>
+                <ul class="tópicos__lista">
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Finanças</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Ações</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Crypto</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Mentalidade</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Negócios</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Psicologia</a>
+                    </li>
+                    <li class="tópicos__item">
+                        <a href="#" class="tópicos__link">Motivacional</a>
+                    </li>
+                </ul>              
+            </section>
+
+            <section class="contato">
+                <div class="contato__descrição">
+                    <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+                    <p class="contato__texto">Atualizações de E-Books, novo livros, promoções e outros!</p>
+                </div>
+                    <input type="email" class="contato__email" placeholder="Cadastre seu E-mail">
+            
+            </section>
+        </main>
+
+        <hr />
+
+        <footer class="rodapé">
+                <p class="rodapé__direitos-autorais">&copy; Inhazin S.A</p>
+                <ul class="lista-rodapé">
+                    <li class="lista-rodapé__titulo">Parceiras</li>
+                    <li class="lista-rodapé__item">
+                        <img class="lista-rodapé__imagem" src="img/Icone-Logo.svg" alt="Icone do Parceira">
+                        <a href="#" class="lista-rodapé__link">Kush Invest</a>
+                    </li>
+                </ul>
+                <ul class="lista-rodapé">
+                    <li class="lista-rodapé__titulo">Redes Sociais</li>
+                    <li class="lista-rodapé__item">
+                        <img class="lista-rodapé__imagem" src="img/Icone-YT.svg" alt="Icone do Youtube">
+                        <a href="#" class="lista-rodapé__link">Youtube</a>
+                    </li>
+                    <li class="lista-rodapé__item">
+                        <img class="lista-rodapé__imagem" src="img/Icone-Insta.svg" alt="Icone do Instagram">
+                        <a href="#" class="lista-rodapé__link">Instagram</a>
+                    </li>
+                    <li class="lista-rodapé__item">
+                        <img class="lista-rodapé__imagem" src="img/Icone-Face.svg" alt="Icone do Facebook">
+                        <a href="#" class="lista-rodapé__link">Facebook</a>
+                    </li>
+                    <li class="lista-rodapé__item">
+                        <img class="lista-rodapé__imagem" src="img/Icone-Twitter.svg" alt="Icone do Twitter">
+                        <a href="#" class="lista-rodapé__link">Twitter</a>
+                    </li>
+                </ul>
+        </footer>
+
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper',{
+                spaceBetween: 20,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script> 
+    </body>
+</html>
